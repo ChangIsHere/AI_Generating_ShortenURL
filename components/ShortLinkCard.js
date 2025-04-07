@@ -3,7 +3,7 @@ export default function ShortLinkCard({ originalUrl, shortLink }) {
         try {
             await navigator.clipboard.writeText(shortLink);
             alert('Done! Already been copied to clipboard!');
-        } catch (err) {
+        } catch {
             alert('Failed! Fail to copy, please try it manually!');
         }
     };
